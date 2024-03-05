@@ -18,7 +18,7 @@ jobs:
           username: ${{secrets.EMAIL_USERNAME}}
           password: ${{secrets.EMAIL_PASSWORD}}
           subject: Test mail title.
-          body: Welcom to Github Workflows by vino K7 ..   
+          body: Welcom to Github Workflows by Test vino K7 ..   
           from: Kesavan
           to: kesavan211@gmail.com,nandhini,shanmugam06@gmail.com
                            
