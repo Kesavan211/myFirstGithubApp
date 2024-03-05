@@ -11,16 +11,18 @@ jobs:
     
     - name: sending a mail
       if: ${{ always() }} 
-      uses: devellany/send-mailer@v1.0.2
+      uses: dawidd6/send-mailer@v1.0.2
       with:
-          host: smtp.google.com
-          port: 465
-          account: ${{secrets.EMAIL_USERNAME}}
+          server_address: smtp.gmail.com
+          server_port: 465
+
+          username: ${{secrets.EMAIL_USERNAME}}
           password: ${{secrets.EMAIL_PASSWORD}}
-          sender: devellany
+
+          subject: Test mail title.
+          body: Welcom to Github Workflows.   
           from: ${{secrets.EMAIL_USERNAME}}
           to: kesavan211@gmail.com,nandhini,shanmugam06@gmail.com
-          subject: Test mail title.
-          body: Welcom to Github Workflows.                    
+                           
           
           
