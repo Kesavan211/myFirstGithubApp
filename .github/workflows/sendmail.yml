@@ -17,7 +17,6 @@ jobs:
           server_port: 465
           username: ${{secrets.EMAIL_USERNAME}}
           password: ${{secrets.EMAIL_PASSWORD}}
-
           subject: Test mail title.
           body: Welcom to Github Workflows.   
           from: Kesavan
