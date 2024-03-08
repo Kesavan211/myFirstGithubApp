@@ -3,7 +3,7 @@ on: push
 
 jobs:
   mail:
-    runs-on: ubuntu-latest 
+    runs-on: ubuntu-latest
     
     steps:
     - name: Print Hello World
